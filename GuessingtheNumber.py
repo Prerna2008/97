@@ -11,14 +11,12 @@ while chances<5 :
             print("You need to guess Higher.")
             guess=int(input("Guess a number between 1 and 9"))
             print("Chances Remaing:",chances)
-        else:
+        elif guess<number:
             print("You need to guess Lower.")
             guess=int(input("Guess a number between 1 and 9"))
             print("Chances Remaing:",chances)
-            
-if guess==number & chances<5 :
-    print("Congratulation YOU WON!!!")
-
-if chances>5 | chances==5:
-    print("You LOSE!!! The Number is",number)
+        elif guess==number & chances<5 :
+            print("Congratulation YOU WON!!!")
+        elif chances>5 | chances==5:
+            print("You LOSE!!! The Number is",number)
 
